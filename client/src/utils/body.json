@@ -1,0 +1,81 @@
+{
+  "object": "value",
+  "document": {
+    "object": "document",
+    "data": null,
+    "nodes": [
+      {
+        "object": "block",
+        "type": "heading-one",
+        "isVoid": false,
+        "data": null,
+        "nodes": [
+          {
+            "object": "text",
+            "leaves": [
+              {
+                "object": "leaf",
+                "text": "Hello, World!",
+                "marks": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "isVoid": false,
+        "data": null,
+        "nodes": [
+          {
+            "object": "text",
+            "leaves": [
+              {
+                "object": "leaf",
+                "text": "This is the main assignment Editor, usually called the Body editor.",
+                "marks": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "isVoid": false,
+        "data": null,
+        "nodes": [
+          {
+            "object": "text",
+            "leaves": [
+              {
+                "object": "leaf",
+                "text": "Students will mainly complete their assignment here. The content inputted here should be regularly saved to the server, and loaded back on every refresh. This content will eventually become a part of a final Submission.",
+                "marks": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "isVoid": false,
+        "data": null,
+        "nodes": [
+          {
+            "object": "text",
+            "leaves": [
+              {
+                "object": "leaf",
+                "text": "While working, it might be useful to display a \"live\" word count in the top-right corner, so that the students have a better idea of how much they need to write.",
+                "marks": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

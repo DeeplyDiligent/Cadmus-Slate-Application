@@ -1,0 +1,45 @@
+{
+  "object": "value",
+  "document": {
+    "object": "document",
+    "data": null,
+    "nodes": [
+      {
+        "object": "block",
+        "type": "heading-one",
+        "isVoid": false,
+        "data": null,
+        "nodes": [
+          {
+            "object": "text",
+            "leaves": [
+              {
+                "object": "leaf",
+                "text": "Notes",
+                "marks": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "isVoid": false,
+        "data": null,
+        "nodes": [
+          {
+            "object": "text",
+            "leaves": [
+              {
+                "object": "leaf",
+                "text": "This is the Notes editor which can be used to jot down additional thoughts and information while a Student completes an assignment.",
+                "marks": []
+              }
+            ]
+          }
+        ]
+      }   
+    ]
+  }
+}

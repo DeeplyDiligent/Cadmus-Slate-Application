@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:prettier/recommended",
+    "prettier/react",
+    "prettier/standard"
+  ],
+  "parser": "babel-eslint",
+  "plugins": [
+    "react",
+    "prettier",
+    "standard"
+  ],
+  "rules": {
+    "react/jsx-filename-extension": [1, {"extensions": [".js"]}],
+    "prettier/prettier": "error",
+    "standard/object-curly-even-spacing": [2, "either"],
+    "standard/array-bracket-even-spacing": [2, "either"],
+    "standard/computed-property-even-spacing": [2, "even"],
+    "standard/no-callback-literal": [2, ["cb", "callback"]],
+    "jsx-a11y/click-events-have-key-events": 0    
+  }
+} 
