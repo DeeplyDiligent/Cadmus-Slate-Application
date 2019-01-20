@@ -19,17 +19,17 @@ const Actions = styled.div`
 
 /** Component for the main editing page. */
 class EditingPage extends React.Component {
-  state = { saved: false , wordCount: 0}
-  saving(context){
-    context.setState({saved:false})
-  }
-  saved(context){
-    context.setState({saved:true})
-  }
-  setWordCount(count, context){
-    context.setState({wordCount:count})
-  }
-  render() { 
+  state = { saved: false, wordCount: 0 };
+  saving = () => {
+    this.setState({ saved: false });
+  };
+  saved = () => {
+    this.setState({ saved: true });
+  };
+  setWordCount = count => {
+    this.setState({ wordCount: count });
+  };
+  render() {
     const { tab, changeTab } = this.props;
     return (
       <React.Fragment>
@@ -50,7 +50,9 @@ class EditingPage extends React.Component {
               </TabBarItem>
             </TabBar>
             <Actions>
-              <em>{this.state.saved?"Saved Successfully":"Saving Now..."}</em>
+              <em>
+                {this.state.saved ? "Saved Successfully" : "Saving Now..."}
+              </em>
               <Count>
                 <strong>Word Count: {this.state.wordCount}</strong>
               </Count>
@@ -58,13 +60,23 @@ class EditingPage extends React.Component {
           </ShelfToolbar>
         </Shelf>
         <Desk>
-          <Primary>{tab === "body" ? <Body saving={this.saving} saved={this.saved} setWordCount={this.setWordCount}context={this} workId={this.props.match.params.workdId}/> : <Notes />}</Primary>
+          <Primary>
+            {tab === "body" ? (
+              <Body
+                saving={this.saving}
+                saved={this.saved}
+                setWordCount={this.setWordCount}
+                workId={this.props.match.params.workdId}
+              />
+            ) : (
+              <Notes />
+            )}
+          </Primary>
         </Desk>
       </React.Fragment>
     );
   }
 }
- 
 
 EditingPage.propTypes = {
   /**
