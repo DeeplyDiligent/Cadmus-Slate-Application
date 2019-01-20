@@ -15,7 +15,8 @@
     "slate-plain-serializer": "^0.5.22",
     "slate-react": "^0.21.12",
     "socket.io-client": "^2.2.0",
-    "styled-components": "^4.1.1"
+    "styled-components": "^4.1.1",
+    "wordcount": "^1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
